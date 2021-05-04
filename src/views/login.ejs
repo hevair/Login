@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="info">
+                <p>
+                    The best implementation
+                </p>
+                <img src="./img/Login_.svg" alt="login">
+            </div>
+            <div class="form-container">
+                <% if(messages.error) { %> 
+                <%= messages.error %> 
+                <% } %> 
+                <h1>Sign In</h1>
+                <form action="/login" method="post">
+                    <input type="email" name="email" placeholder="Email" id="email">
+                    <input type="password" name="password" placeholder="Password" id="password">
+                    <button type="submit">Logar</button>
+                </form>
+                <a href="/registre">
+                    <span>Registre</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
